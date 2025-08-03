@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Visit Status</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 12px 0;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        .valid {
+            color: green;
+            font-weight: bold;
+        }
+
+        .invalid {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h2>Visit Permit Status</h2>
+
+<div class="card" th:if="${valid}">
+    <p><strong>Status:</strong> <span class="valid">VALID</span></p>
+    <p><strong>Visitor Name:</strong> <span th:text="${visitorName}"></span></p>
+    <p><strong>Visitor Purpose:</strong> <span th:text="${visitorPurpose}"></span></p>
+    <p><strong>Visitor Vehicle No:</strong> <span th:text="${vehicleNumber}"></span></p>
+    <p><strong>Resident Name:</strong> <span th:text="${residentName}"></span></p>
+    <p><strong>Resident Flat No:</strong> <span th:text="${flatNo}"></span></p>
+    <p><strong>Permit Expires At:</strong> <span th:text="${expiryTime}"></span></p>
+    <p><strong>Time Left:</strong> <span th:text="${timeLeft}"></span></p>
+</div>
+
+<div class="card" th:if="${!valid}">
+    <p class="invalid">This QR Code or Permit is Invalid or Expired.</p>
+</div>
+</body>
+</html>
