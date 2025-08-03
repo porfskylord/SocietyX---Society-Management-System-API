@@ -49,14 +49,14 @@ societyxapi/
 │   ├── main/
 │   │   ├── java/com/lordscave/societyxapi/
 │   │   │   ├── auth_module/       # Authentication & User Management
-|   │   │   ├── admin_module/    # Visitor Management
+|   │   │   ├── admin_module/      # Admin Management
 │   │   │   ├── security_module/   # Security configurations
 │   │   │   ├── resident_module/   # Resident features
-│   │   │   └── core/             # Core entities and repositories
+│   │   │   └── core/              # Core entities and repositories
 │   │   └── resources/             # Configuration files
 │   └── test/                      # Test files
 ├── screenshots/                   # Application screenshots
-└── README.md                     # This file
+└── README.md                      # This file
 ```
 
 ## ✨ Features
