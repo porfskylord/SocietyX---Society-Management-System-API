@@ -115,6 +115,7 @@ societyxapi/
   - Spring Security
   - Spring Data JPA
   - Hibernate
+  - Thymeleaf
 
 - **Database**:
   - MySQL/PostgreSQL
