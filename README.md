@@ -138,7 +138,7 @@ societyxapi/
 
 2. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/societyxapi.git
+   git clone https://github.com/porfskylord/societyxapi.git
    cd societyxapi
    ```
 
