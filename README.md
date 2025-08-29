@@ -18,7 +18,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/societyxapi.git
+git clone https://github.com/porfskylord/societyxapi.git
 
 # Navigate to project directory
 cd societyxapi
